@@ -20,5 +20,5 @@ from hbh import views as hbh_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^addUserInfo/', hbh_views.addUserInfo),
-    url(r'^isLogin', hbh_views.isLogin),
+    url(r'^isLogin$', hbh_views.isLogin),
 ]
