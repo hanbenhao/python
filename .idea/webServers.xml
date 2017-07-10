@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="446d5d89-6dd6-4801-bebb-01f6c9e5de00" name="Filt" url="http://119.23.49.17">
+        <fileTransfer host="119.23.49.17" port="22" rootFolder="/data/utinghao/utinghaoFilt" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="c4a5f1eb-28e2-4ce6-9f46-120c957e6e27" name="server" url="http://119.23.49.17">
+        <fileTransfer host="119.23.49.17" port="22" rootFolder="/data/utinghao/utinghaoServer" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="47f0dce4-2c57-4e1f-8739-e15bba29621f" name="nginx" url="http://119.23.49.17">
+        <fileTransfer host="119.23.49.17" port="22" rootFolder="/etc/nginx/conf.d" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="d134bb6a-01a6-449d-be50-e286a7cf3157" name="root" url="http://119.23.49.17">
+        <fileTransfer host="119.23.49.17" port="22" rootFolder="/root" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="e7eaef50-ced4-4b69-a35d-f40677152bd8" name="uwsgi" url="http://119.23.49.17">
+        <fileTransfer host="119.23.49.17" port="22" rootFolder="/data/utinghao/utinghao.ini" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

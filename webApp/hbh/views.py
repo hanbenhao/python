@@ -32,7 +32,7 @@ def isLogin(request):
     if request.method == "GET":
         UserName = request.GET.get('UserName', False)
         UserPassword = request.GET.get('UserPassword', False)
-        if UserName:
+        if UserName and UserPassword:
             userInfo = hbh_models.User.objects.filter(UserName=UserName).values()
             if userInfo[0]['UserPassword'] == UserPassword:
                 return HttpResponse(u'登陆成功!')
@@ -42,9 +42,8 @@ def isLogin(request):
         return HttpResponse(u'接口调用方式出错！')
 
 #删除用户
-def deleteUser(request):
-    if request.method == "GET":
-        UserName = request.GET.get('UserName')
-        UserPassword = request.GET.get('UserPassword')
-        if UserName and UserPassword:
-            
+# def deleteUser(request):
+#     if request.method == "GET":
+#         UserName = request.GET.get('UserName')
+#         UserPassword = request.GET.get('UserPassword')
+#         if UserName and UserPassword:
